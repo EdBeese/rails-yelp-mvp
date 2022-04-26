@@ -10,6 +10,17 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <nav class="navbar navbar-default border mb-5" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <%= link_to "All Restaurants", restaurants_path, class: "navbar-brand text-secondary" %>
+        </div>
+        <div class="nav navbar-right">
+          <%= link_to "New Restaurant", new_restaurant_path, class: 'text-secondary' %>
+        </div>
+      </div>
+
+    </nav>
   <body>
     <%= yield %>
   </body>
