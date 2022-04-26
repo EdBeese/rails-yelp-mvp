@@ -1,0 +1,8 @@
+<h1>All Restaurants</h1>
+
+<% @restaurants.each do |restaurant|%>
+  <article class="articles">
+    <h2><%= link_to restaurant.name, restaurant_path(restaurant) %></h2>
+    Style: <%= restaurant.category.capitalize %>
+  </article>
+<% end %>
